@@ -1,0 +1,29 @@
+
+div#main {
+    width: 500px;
+    margin: 10px auto;
+    
+}
+
+div#imgContainer {
+    float: left;
+}
+
+img {
+    margin-right: 10px;
+}
+
+div#name {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+div#detail > div {
+    margin-bottom: 8px;
+}
+
+div#price {
+    font-weight: bold;
+    color: brown;
+}

@@ -1,0 +1,12 @@
+
+nav {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+div.content > * {
+    background-color: powderblue;
+    margin: 10px;
+    padding: 5px 8px;
+}

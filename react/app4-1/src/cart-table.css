@@ -1,0 +1,23 @@
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 10px auto;
+} 
+
+caption {
+    padding: 10px;
+    margin: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dee
+}
+
+td {
+    padding: 8px 5px
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}

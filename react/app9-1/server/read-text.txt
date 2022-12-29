@@ -1,0 +1,37 @@
+app.get('/api/db/read-text', (request, response) => {
+    Product
+    .find()     //.where('price').gt(3000)
+    .exec((err, docs) => {
+        if (docs.length == 0) {
+            response.send('ไม่มีรายการข้อมูล')
+            return
+        }
+
+        let r = `
+            <table border="1">
+		    <tr>
+                <th>ชื่อสินค้า</th><th>ราคา</th>
+		        <th>วันที่เพิ่มสินค้า</th><th>รายละเอียด</th>
+            </tr>
+            ${
+                doc.map(d => {
+                    let dt = new Date(Date.parse(d.date_added))
+                    let dmy = `
+                        ${dt.getDate()}-${dt.getMonth()+1}-${dt.getFullYear()}
+                    `
+            
+                    return `
+                        <tr>
+                            <td>${d.name}</td>
+                            <td>${d.price}</td>
+                            <td>${dmy}</td>
+                            <td>${d.detail}</td>
+                        </tr>
+                    `               
+                })
+            }
+            </table>
+        `
+        response.send(r)
+    })
+})

@@ -1,0 +1,18 @@
+.nav {
+    background-color: #ced;
+    padding: 7px;
+    text-align: center
+}
+
+.menu {             /* สำหรับสถานะ inactive */
+    color: blue;
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+.active_menu {      /* สำหรับสถานะ active */
+    color: red;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 2px 5px;
+}
