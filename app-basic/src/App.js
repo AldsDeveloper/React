@@ -2,13 +2,13 @@ import React from 'react';
 import './index.css';
 
 function App() {
-  /*return (
+  return (
     <h3>
       {' '}
       Hello World! <br></br>
       <h1>สวัสดีชาวโลกฉันมาแล้ว</h1>{' '}
     </h3>
-  );*/
+  );
   /*let r = 'React';
     let rn = 'React Native';
     const el = (
