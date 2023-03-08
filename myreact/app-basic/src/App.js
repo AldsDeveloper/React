@@ -2,25 +2,29 @@ import React from 'react';
 import './index.css';
 
 function App() {
-  return (
-    <h3>
-      {' '}
-      Hello World! <br></br>
-      <h1>สวัสดีชาวโลกฉันมาแล้ว</h1>{' '}
-    </h3>
+  // return (
+  //   <>
+  //     <h3>Hello World! </h3>
+  //     <br />
+  //     <h1>สวัสดีชาวโลกฉันมาแล้ว</h1>
+  //   </>
+  // );
+
+
+  let r = 'React';
+  let rn = 'React Native';
+  const el = (
+    <h1>
+      <center>
+        Create Web & Mobile Apps
+        <br />
+        with {r} & {rn}
+      </center>
+    </h1>
   );
-  /*let r = 'React';
-    let rn = 'React Native';
-    const el = (
-      <h1>
-        <center>
-          Create Web & Mobile Apps
-          <br />
-          with {r} & {rn}
-        </center>
-      </h1>
-    );
-    return el;*/
+  return el;
+
+  
   /*return (
       <table border="1">
         <tr>
